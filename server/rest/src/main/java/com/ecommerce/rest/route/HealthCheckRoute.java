@@ -1,17 +1,16 @@
-package com.ecommerce.rest.resource.v1;
+package com.ecommerce.rest.route;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 @RequestMapping("/v1/health")
-public class HealthResource {
+public class HealthCheckRoute {
 
     @GetMapping("/ping")
     public String healthCheck() {
         return "pong";
     }
-
 
 }

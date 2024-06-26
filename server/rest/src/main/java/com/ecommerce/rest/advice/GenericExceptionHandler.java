@@ -1,13 +1,17 @@
 package com.ecommerce.rest.advice;
 
+import java.rmi.ServerException;
 import java.util.HashMap;
 import java.util.Map;
+import jakarta.servlet.ServletException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
+import org.springframework.web.HttpMediaTypeNotAcceptableException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver;
 import com.ecommerce.rest.model.exchange.GenericResponse;
 
 @RestControllerAdvice
