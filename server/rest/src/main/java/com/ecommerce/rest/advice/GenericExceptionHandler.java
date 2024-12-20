@@ -15,6 +15,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver;
+import com.ecommerce.rest.exception.UserException;
 import com.ecommerce.rest.model.exchange.GenericResponse;
 
 @RestControllerAdvice

@@ -2,8 +2,7 @@ package com.ecommerce.rest.common;
 
 public interface Constants {
 
-    interface HeaderKeys {
-        String X_INTERNAL_TOKEN = "X-Internal-Token";
-    }
+    String BEARER_TOKEN_PREFIX = "Bearer ";
+    String BEARER_REALM_FORMAT = "Bearer realm=\"%s\", error=\"%s\", error_description=\"%s\"";
 
 }
